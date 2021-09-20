@@ -21,8 +21,11 @@
 
 .infoBox__cases {
   font-weight: 600;
-  font-size: 1.75rem;
+  font-size: 5vmin; /*1.75rem*/
   margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cases {
@@ -33,9 +36,24 @@
   color: #10cc29;
 }
 
+.infoBox__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .infoBox__total {
   color: #6c757d;
   font-weight: 700 !important;
   font-size: 0.8rem !important;
   margin-top: 15px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (orientation: portrait) {
+  .infoBox__title {
+    font-size: 4.7vmin !important;
+  }
 }
