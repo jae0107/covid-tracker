@@ -25,6 +25,26 @@
   margin-bottom: 0.5rem;
 }
 
+.cases {
+  color: #cc1034;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.deaths {
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.recovered {
+  color: #10cc29;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
 .infoBox__total {
   color: #6c757d;
   font-weight: 700 !important;
