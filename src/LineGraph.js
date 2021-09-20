@@ -49,7 +49,7 @@ const buildChartData = (data, casesType) => {
 
     } else if (casesType === "recovered") {
         line_colour = "#7dd71d";
-        
+
     } else if (casesType === "deaths") {
         line_colour = "black";
     }
@@ -72,7 +72,7 @@ const buildChartData = (data, casesType) => {
     return chartData;
 };
 
-const LineGraph = ({ casesType }) => {
+const LineGraph = ({ casesType, ...props }) => {
     const [data, setData] = useState({});
 
     useEffect(() => {
@@ -91,7 +91,7 @@ const LineGraph = ({ casesType }) => {
     }, [casesType]);
 
     return (
-        <div>
+        <div className={props.className}>
             {data?.length > 0 && (
             <Line
                 data={{
