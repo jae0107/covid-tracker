@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react'
 import { Line } from "react-chartjs-2";
 import 'chartjs-adapter-date-fns';
 
+let line_colour;
+
 const options = {
     plugins: {
         legend: false,
@@ -42,11 +44,26 @@ const buildChartData = (data, casesType) => {
     let chartData = [];
     let lastDataPoint;
 
+    if (casesType === "cases") {
+        line_colour = "#CC1034";
+
+    } else if (casesType === "recovered") {
+        line_colour = "#7dd71d";
+        
+    } else if (casesType === "deaths") {
+        line_colour = "black";
+    }
+
     for (let date in data.cases) {
         if (lastDataPoint) {
+            let yValue = data[casesType][date] - lastDataPoint;
+
+            if(yValue < 0) {
+                yValue = 0;
+            }
             let newDataPoint = {
                 x: date,
-                y: data[casesType][date] - lastDataPoint,
+                y: yValue,
             };
             chartData.push(newDataPoint);
         }
@@ -55,7 +72,7 @@ const buildChartData = (data, casesType) => {
     return chartData;
 };
 
-const LineGraph = ({ casesType = "cases" }) => {
+const LineGraph = ({ casesType }) => {
     const [data, setData] = useState({});
 
     useEffect(() => {
@@ -81,7 +98,7 @@ const LineGraph = ({ casesType = "cases" }) => {
                     datasets: [
                     {
                         backgroundColor: "rgba(204, 16, 52, 0.5)",
-                        borderColor: "#CC1034",
+                        borderColor: line_colour,
                         data: data,
                     },
                     ],
