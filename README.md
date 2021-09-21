@@ -20,7 +20,7 @@ This is a responsive COVID-19 tracker web. It shows new cases, recoveries and de
 
 ### New cases in red
 
-A circle represent the number of total cases in a country, so bigger circles mean the greater number.
+A circle represents the number of total cases in a country, so bigger circles mean the greater number.
 <img src = "https://user-images.githubusercontent.com/79579314/134167409-24778194-b720-4206-93c5-6229b237268d.png" width="400px">
 
 ### Recoveries in green
