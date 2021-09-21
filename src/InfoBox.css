@@ -21,7 +21,7 @@
 
 .infoBox__cases {
   font-weight: 600;
-  font-size: 5vmin; /*1.75rem*/
+  font-size: 1.75rem;
   margin-bottom: 0.5rem;
   display: flex;
   align-items: center;
@@ -52,8 +52,12 @@
   justify-content: center;
 }
 
-@media (orientation: portrait) {
+@media (orientation: portrait) and (max-width: 450px) {
   .infoBox__title {
     font-size: 4.7vmin !important;
+  }
+
+  .infoBox__cases {
+    font-size: 5vmin;
   }
 }
