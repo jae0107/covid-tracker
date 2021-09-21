@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# COVID-19 Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a responsive COVID-19 tracker web. It shows new cases, recoveries and deaths by a country.
 
-## Available Scripts
+## Install dependencies
 
-In the project directory, you can run:
+    npm install
 
-### `yarn start`
+## Usage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    npm install @material-ui/core
+    npm i numeral
+    npm i react-chartjs-2
+    npm i chart.js
+    npm install date-fns chartjs-adapter-date-fns --save
+    npm i react-leaflet
+    npm i leaflet
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Contents
 
-### `yarn test`
+### New cases in red
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A circle represent the number of total cases in a country, so bigger circles mean the greater number.
+<img src = "https://user-images.githubusercontent.com/79579314/134167409-24778194-b720-4206-93c5-6229b237268d.png" width="400px">
 
-### `yarn build`
+### Recoveries in green
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src = "https://user-images.githubusercontent.com/79579314/134167717-6269478c-b653-47e3-876b-1c1be85c3ba3.png" width="400px">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Deaths in black
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src = "https://user-images.githubusercontent.com/79579314/134167800-4216ace7-3f25-44c7-aafe-551ee0c614c4.png" width="400px">
 
-### `yarn eject`
+### Select a country from the dropdown menu
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<img src = "https://user-images.githubusercontent.com/79579314/134168083-4ffc7656-cf90-4d88-9f27-81a9b26057f6.png" width="400px">
+If you select a country from the dropdown menu, then the map automatically shows the country.
+<img src = "https://user-images.githubusercontent.com/79579314/134168323-355e756d-d2a0-41ca-9693-406d165e928f.png" width="400px">
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Click a circle on the map
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<img src = "https://user-images.githubusercontent.com/79579314/134168774-3fb5f363-6aa0-49fa-b141-a55cf600071e.png" width="400px">
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Link
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://covid-tracker7.web.app/
