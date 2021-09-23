@@ -1,6 +1,6 @@
 # COVID-19 Tracker
 
-This is a responsive COVID-19 tracker web. It shows new cases, recoveries and deaths by a country.
+This is a responsive COVID-19 tracker web developed in React and disease.sh API. It shows new cases, recoveries and deaths by a country.
 
 ## Install dependencies
 
