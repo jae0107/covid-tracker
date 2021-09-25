@@ -37,6 +37,7 @@ export const prettyPrintStat = (stat) =>
 
 //Draw circles on the map with interactive tooltop
 export const showDataOnMap = (data, casesType = "cases") => 
+    console.log(data);
     data.map(country => (
         <Circle 
             center={[country.countryInfo.lat, country.countryInfo.long]}
