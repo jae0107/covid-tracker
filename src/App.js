@@ -60,7 +60,7 @@ function App() {
         .then(data => {
           setCountry(countryCode);
           setCountryInfo(data); // All of the data from the country response
-
+          
           if(countryCode === "worldwide"){
             setMapCenter({ lat: 34.80746, lng: -40.4796 });
             setMapZoom(3);

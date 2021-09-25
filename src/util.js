@@ -36,8 +36,7 @@ export const prettyPrintStat = (stat) =>
 
 
 //Draw circles on the map with interactive tooltop
-export const showDataOnMap = (data, casesType = "cases") => 
-    console.log(data);
+export const showDataOnMap = (data, casesType = "cases") =>
     data.map(country => (
         <Circle 
             center={[country.countryInfo.lat, country.countryInfo.long]}
@@ -55,13 +54,13 @@ export const showDataOnMap = (data, casesType = "cases") =>
                         {country.country}
                     </div>
                     <div className="info-confirmed">
-                        Cases: {numeral(country.cases).format("0,0")}
+                        Cases: {numeral(country.cases).format("0,0")} (+{numeral(country.todayCases).format("0,0")})
                     </div>
                     <div className="info-recovered">
-                        Recovered: {numeral(country.recovered).format("0,0")}
+                        Recovered: {numeral(country.recovered).format("0,0")} (+{numeral(country.todayRecovered).format("0,0")})
                     </div>
                     <div className="info-deaths">
-                        Deaths: {numeral(country.deaths).format("0,0")}
+                        Deaths: {numeral(country.deaths).format("0,0")} (+{numeral(country.todayDeaths).format("0,0")})
                     </div>
                 </div>
             </Popup>
